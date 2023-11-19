@@ -43,8 +43,54 @@
         </div>
       </div>
     </nav>
-    <h1 id="view">Account Management</h1>
+    <h1 id="view" style="text-align: center;">Account Management</h1>
 
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card bg-dark m-3" style="color:white;">
+              <h4 class="card-title" style="text-align: center;">First and Last Name</h4>
+              <div class="card-body" style="text-align: center;">
+                <form action="/submit_form" method="post">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                    <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-4">
+            <div class="card m-3 bg-dark" style="color:white;">
+              <h4 class="card-title" style="text-align: center;">Username and Password</h4>
+              <div class="card-body" style="text-align: center;">
+                <form action="/edit_user" method="post">
+                    <label for="uname">Username:</label><br>
+                    <input type="text" id="uname" name="uname" placeholder="Username"><br>
+                    <label type="password">Password:</label><br>
+                    <input type="password" id="pword" name="pword" placeholder="Password"><br>
+                    <label type="password">Repeat Password:</label><br>
+                    <input type="password" id="rpword" name=rpword placeholder="Password"><br>
+                    <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-4">
+                <div class="card bg-dark m-3" style="color:white;">
+                  <h4 class="card-title" style="text-align: center;">Personal Information</h4>
+                  <div class="card-body" style="text-align: center;">
+                    <form action="/submit_form" method="post">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="fname" name="fname" placeholder="Email"><br>
+                        <label for="address">Address:</label><br>
+                        <input type="address" id="lname" name="lname" placeholder="Address"><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                </div>
+            
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
