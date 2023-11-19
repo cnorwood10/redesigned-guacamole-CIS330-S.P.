@@ -82,14 +82,53 @@
                   <div class="card-body" style="text-align: center;">
                     <form action="/submit_form" method="post">
                         <label for="email">Email:</label><br>
-                        <input type="email" id="fname" name="fname" placeholder="Email"><br>
+                        <input type="email" id="email" name="email" placeholder="Email"><br>
                         <label for="address">Address:</label><br>
-                        <input type="address" id="lname" name="lname" placeholder="Address"><br>
+                        <input type="address" id="add" name="add" placeholder="Address"><br>
                         <input type="submit" value="Submit">
                     </form>
                   </div>
                 </div>
-            
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card bg-dark m-3" style="color:white;">
+              <h4 class="card-title" style="text-align: center;">Card Information</h4>
+              <div class="card-body" style="text-align: center;">
+                <form action="/submit_form" method="post">
+                    <label for="fname">Card Number:</label><br>
+                    <input type="numeric" id="cnum" name="cnum" placeholder="xxxx-xxxx-xxxx-xxxx"><br>
+                    <label for="lname">Card Name:</label><br>
+                    <input type="text" id="cname" name="cname" placeholder="Name on Card"><br>
+                    <label for="lname">CVV:</label><br>
+                    <input type="password" id="cvv" name="cvv" placeholder="xxx"><br>
+                    <label for="exp-date">Expiration Date:</label><br>
+                    <input type="month" id="exp-date" name="exp-date"><br>
+                    <label for="lname">Zipcode</label><br>
+                    <input type="numeric" id="zip" name="zip" placeholder="xxxxx"><br>
+                    <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card bg-dark m-3" style="color:white;">
+              <h4 class="card-title" style="text-align: center;">Memebership Option</h4>
+              <div class="card-body" style="text-align: center;">
+                <form action="/submit_form" method="post">
+                    <input type="radio" id="month1" name="membership" value="1 Month">
+                    <label for="month1">1 Month</label><br>
+                    <input type="radio" id="month3" name="membership" value="3 Months">
+                    <label for="month3">3 Months</label><br>
+                    <input type="radio" id="month6" name="membership" value="6 Months">
+                    <label for="month6">6 Months</label><br>
+                    <input type="radio" id="year1" name="membership" value="1 Year">
+                    <label for="year1">1 Year</label><br>
+                </form>
+              </div>
+            </div>
+          </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
