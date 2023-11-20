@@ -85,6 +85,9 @@
                         <input type="email" id="email" name="email" placeholder="Email"><br>
                         <label for="address">Address:</label><br>
                         <input type="address" id="add" name="add" placeholder="Address"><br>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="phone" id="phone" name="phone" placeholder="xxx-xxx-xxxx"><br><br>
+                        <input type="file" name="id"><br>
                         <input type="submit" value="Submit">
                     </form>
                   </div>
@@ -93,7 +96,7 @@
 
     <div class="row">
         <div class="col-sm-4">
-            <div class="card bg-dark m-3" style="color:white;">
+            <div class="card bg-dark m-4" style="color:white;">
               <h4 class="card-title" style="text-align: center;">Card Information</h4>
               <div class="card-body" style="text-align: center;">
                 <form action="/submit_form" method="post">
@@ -113,9 +116,9 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="card bg-dark m-3" style="color:white;">
-              <h4 class="card-title" style="text-align: center;">Memebership Option</h4>
-              <div class="card-body" style="text-align: center;">
+            <div class="card bg-dark m-4" style="color:white;">
+              <h4 class="card-title" style="text-align: center;">Membership Option</h4>
+              <div class="card-body">
                 <form action="/submit_form" method="post">
                     <input type="radio" id="month1" name="membership" value="1 Month">
                     <label for="month1">1 Month</label><br>
@@ -125,10 +128,24 @@
                     <label for="month6">6 Months</label><br>
                     <input type="radio" id="year1" name="membership" value="1 Year">
                     <label for="year1">1 Year</label><br>
+                    <input type="checkbox" id="notfiy" name="notifications" value="emailnotify">
+                    <label for="notify">Emails regarding membership status?</label><br>
+                    <input type="radio" id="s-f1" name="single-family" value="single">
+                    <label for="single-family">Single</label><br>
+                    <input type="radio" id="s-f2" name="single-family" value="family">
+                    <label for="single-family">Family</label>
                 </form>
               </div>
             </div>
           </div>
+        <div class="col-sm-4">
+            <div class="card bg-dark m-4" style="color:white;">
+                <h4 class="card-title" style="text-align: center;">Membership Duration</h4>
+                <div class="card-body">
+                    <p>Your Membership will be active until:</p>
+                    <p>You have _____ months and _____ days left until membership expires.</p>
+                </div>
+        </div>
     </div>
     <div>
         <button type="button" class="btn btn-outline-primary">Save Account</button>
