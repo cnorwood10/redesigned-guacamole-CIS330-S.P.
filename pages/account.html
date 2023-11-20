@@ -97,11 +97,11 @@
               <h4 class="card-title" style="text-align: center;">Card Information</h4>
               <div class="card-body" style="text-align: center;">
                 <form action="/submit_form" method="post">
-                    <label for="fname">Card Number:</label><br>
+                    <label for="cnum">Card Number:</label><br>
                     <input type="numeric" id="cnum" name="cnum" placeholder="xxxx-xxxx-xxxx-xxxx"><br>
-                    <label for="lname">Card Name:</label><br>
+                    <label for="cname">Card Name:</label><br>
                     <input type="text" id="cname" name="cname" placeholder="Name on Card"><br>
-                    <label for="lname">CVV:</label><br>
+                    <label for="cvv">CVV:</label><br>
                     <input type="password" id="cvv" name="cvv" placeholder="xxx"><br>
                     <label for="exp-date">Expiration Date:</label><br>
                     <input type="month" id="exp-date" name="exp-date"><br>
@@ -129,6 +129,10 @@
               </div>
             </div>
           </div>
+    </div>
+    <div>
+        <button type="button" class="btn btn-outline-primary">Save Account</button>
+        <button type="button" class="btn btn-outline-danger">Delete Account</button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
