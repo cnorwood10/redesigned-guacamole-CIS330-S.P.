@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-danger navbar-light justify-content-center fixed-top">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -24,37 +24,44 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
           <li class="nav-item">
-             <a class="nav-link text-white" target="" href="https://cnorwood10.github.io/redesigned-guacamole-CIS330-S.P./">Clark's Gym</a>
+             <a class="nav-link text-white" target="" href="https://cnorwood10.github.io/redesigned-guacamole-CIS330-S.P./" style="font-size: 20px"><b>Clark's Gym</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" target="" href="login.html">Login/Sign Up</a>
+            <a class="nav-link" target="" href="login.html" style="font-size: 20px"><b>Login/Sign Up</b></a>
           </li>
           <br>
           <li class="nav-item">
-            <a class="nav-link" target="" href="schedule.html">Class Schedule</a>
+            <a class="nav-link" target="" href="schedule.html" style="font-size: 20px"><b>Class Schedule</b></a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" target="" href="reviews.html">User Reviews</a>
+            <a class="nav-link" target="" href="reviews.html" style="font-size: 20px"><b>User Reviews</b></a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" target="" href="account.html">Account Management</a>
+            <a class="nav-link" target="" href="account.html" style="font-size: 20px"><b>Account Management</b></a>
           </li> 
           </ul>
         </div>
       </div>
     </nav>
+    <br>
+    <br>
+    <br>
     <h1 id="view" style="text-align: center;">Account Management</h1>
+    
+    <div style="text-align: center;">
+      <img src="\images/IMG_7784.jpeg" atl="Clark's Gym Logo" width="200px">
+    </div>
 
     <div class="row">
         <div class="col-sm-4">
             <div class="card bg-dark m-3" style="color:white;">
               <h4 class="card-title" style="text-align: center;">First and Last Name</h4>
-              <div class="card-body" style="text-align: center;">
+              <div class="card-body">
                 <form action="/submit_form" method="post">
-                    <label for="fname">First Name:</label><br>
-                    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-                    <label for="lname">Last Name:</label><br>
-                    <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
                     <input type="submit" value="Submit">
                 </form>
               </div>
@@ -63,14 +70,14 @@
         <div class="col-sm-4">
             <div class="card m-3 bg-dark" style="color:white;">
               <h4 class="card-title" style="text-align: center;">Username and Password</h4>
-              <div class="card-body" style="text-align: center;">
+              <div class="card-body">
                 <form action="/edit_user" method="post">
-                    <label for="uname">Username:</label><br>
-                    <input type="text" id="uname" name="uname" placeholder="Username"><br>
-                    <label type="password">Password:</label><br>
-                    <input type="password" id="pword" name="pword" placeholder="Password"><br>
-                    <label type="password">Repeat Password:</label><br>
-                    <input type="password" id="rpword" name=rpword placeholder="Password"><br>
+                    <label for="uname">Username: </label>
+                    <input type="text" id="uname" name="uname" placeholder="Username"><br><br>
+                    <label type="password">Password: </label>
+                    <input type="password" id="pword" name="pword" placeholder="Password"><br><br>
+                    <label type="password">Repeat Password: </label>
+                    <input type="password" id="rpword" name=rpword placeholder="Repeat Password"><br><br>
                     <input type="submit" value="Submit">
                 </form>
               </div>
@@ -79,13 +86,13 @@
             <div class="col-sm-4">
                 <div class="card bg-dark m-3" style="color:white;">
                   <h4 class="card-title" style="text-align: center;">Personal Information</h4>
-                  <div class="card-body" style="text-align: center;">
+                  <div class="card-body">
                     <form action="/submit_form" method="post">
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" placeholder="Email"><br>
-                        <label for="address">Address:</label><br>
-                        <input type="address" id="add" name="add" placeholder="Address"><br>
-                        <label for="phone">Phone Number:</label><br>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                        <label for="address">Address:</label>
+                        <input type="address" id="add" name="add" placeholder="Address"><br><br>
+                        <label for="phone">Phone Number:</label>
                         <input type="phone" id="phone" name="phone" placeholder="xxx-xxx-xxxx"><br><br>
                         <input type="file" name="id"><br>
                         <input type="submit" value="Submit">
@@ -98,18 +105,18 @@
         <div class="col-sm-4">
             <div class="card bg-dark m-4" style="color:white;">
               <h4 class="card-title" style="text-align: center;">Card Information</h4>
-              <div class="card-body" style="text-align: center;">
+              <div class="card-body">
                 <form action="/submit_form" method="post">
-                    <label for="cnum">Card Number:</label><br>
-                    <input type="numeric" id="cnum" name="cnum" placeholder="xxxx-xxxx-xxxx-xxxx"><br>
-                    <label for="cname">Card Name:</label><br>
-                    <input type="text" id="cname" name="cname" placeholder="Name on Card"><br>
-                    <label for="cvv">CVV:</label><br>
-                    <input type="password" id="cvv" name="cvv" placeholder="xxx"><br>
-                    <label for="exp-date">Expiration Date:</label><br>
-                    <input type="month" id="exp-date" name="exp-date"><br>
-                    <label for="lname">Zipcode</label><br>
-                    <input type="numeric" id="zip" name="zip" placeholder="xxxxx"><br>
+                    <label for="cnum">Card Number: </label>
+                    <input type="numeric" id="cnum" name="cnum" placeholder="xxxx-xxxx-xxxx-xxxx"><br><br>
+                    <label for="cname">Card Name: </label>
+                    <input type="text" id="cname" name="cname" placeholder="Name on Card"><br><br>
+                    <label for="cvv">CVV: </label>
+                    <input type="password" id="cvv" name="cvv" placeholder="xxx"><br><br>
+                    <label for="exp-date">Expiration Date: </label>
+                    <input type="month" id="exp-date" name="exp-date"><br><br>
+                    <label for="lname">Zipcode: </label>
+                    <input type="numeric" id="zip" name="zip" placeholder="xxxxx"><br><br>
                     <input type="submit" value="Submit">
                 </form>
               </div>
@@ -121,19 +128,19 @@
               <div class="card-body">
                 <form action="/submit_form" method="post">
                     <input type="radio" id="month1" name="membership" value="1 Month">
-                    <label for="month1">1 Month</label><br>
+                    <label for="month1">1 Month</label><br><br>
                     <input type="radio" id="month3" name="membership" value="3 Months">
-                    <label for="month3">3 Months</label><br>
+                    <label for="month3">3 Months</label><br><br>
                     <input type="radio" id="month6" name="membership" value="6 Months">
-                    <label for="month6">6 Months</label><br>
+                    <label for="month6">6 Months</label><br><br>
                     <input type="radio" id="year1" name="membership" value="1 Year">
-                    <label for="year1">1 Year</label><br>
+                    <label for="year1">1 Year</label><br><br>
                     <input type="checkbox" id="notfiy" name="notifications" value="emailnotify">
-                    <label for="notify">Emails regarding membership status?</label><br>
+                    <label for="notify">Emails regarding membership status?</label><br><br>
                     <input type="radio" id="s-f1" name="single-family" value="single">
-                    <label for="single-family">Single</label><br>
+                    <label for="single-family">Single</label><br><br>
                     <input type="radio" id="s-f2" name="single-family" value="family">
-                    <label for="single-family">Family</label>
+                    <label for="single-family">Family</label><br>
                 </form>
               </div>
             </div>
